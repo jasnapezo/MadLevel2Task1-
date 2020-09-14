@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvPlaces.adapter = placeAdapter
 
         for (i in Place.PLACE_NAMES.indices) {
-            places.add(Place(Place.PLACE_NAMES[i],        Place.PLACE_RES_DRAWABLE_IDS[i]))
+            places.add(Place(Place.PLACE_NAMES[i], Place.PLACE_RES_DRAWABLE_IDS[i]))
 
         }
         placeAdapter.notifyDataSetChanged()
