@@ -23,7 +23,7 @@ class PlaceAdapter (private val places: List<Place>) :
         }
 
         inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-                val binding = ItemPlaceBinding.bind(itemView)
+                private val binding = ItemPlaceBinding.bind(itemView)
 
                 fun bind(place : Place) {
                         binding.image.setImageResource(place.imageResId)
